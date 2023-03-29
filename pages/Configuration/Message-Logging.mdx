@@ -1,0 +1,26 @@
+import { Callout } from 'nextra-theme-docs'
+import { Tab, Tabs } from 'nextra-theme-docs'
+
+# Message Logging
+
+<Tabs items={['Single Channel Logging', 'Dual Channel Logging']}>
+	<Tab>
+		Create your channel you want to log messages in. You can name it whatever you want, but we recommended to name it something like `message-logs` for easy visibility.
+
+		> The channel we created
+		<img src="https://klabsrg1.blob.core.windows.net/public/docs/message_logs.png" />
+		---
+		Now we will tell Senko to use the channel using the command `/server action-logs set`
+
+		> Example response from Senko
+		![Action log channel set](https://klabsrg1.blob.core.windows.net/public/docs/message_logs_response.png)
+		---
+		Now when a message is edited or deleted Senko witll log it in the channel we created.
+
+		> Example
+		![Kitsune Banned](https://klabsrg1.blob.core.windows.net/public/docs/message_logs_log.png)
+	</Tab>
+	<Tab>
+
+	</Tab>
+</Tabs>

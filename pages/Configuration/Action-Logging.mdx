@@ -1,0 +1,22 @@
+import { Callout } from 'nextra-theme-docs'
+
+# Action Logging
+
+<Callout type="warning">
+	Senko will need the "View Audit Log" permission to log actions she did not make.
+</Callout>
+
+Create your channel you want to log actions in. You can name it whatever you want, but we recommended to name it something like `action-logs` for easy visibility.
+
+> The channel we created
+![Action log channel](https://klabsrg1.blob.core.windows.net/public/docs/action_logs_channel.png)
+---
+Now we will tell Senko to use the channel using the command `/server action-logs set`
+
+> Example response from Senko
+![Action log channel set](https://klabsrg1.blob.core.windows.net/public/docs/action_report_set.png)
+---
+Now when a member gets banned, kicked, or timed-out, Senko will send a message to the channel notifying you of the action.
+
+> Example of a member being banned
+![Kitsune Banned](https://klabsrg1.blob.core.windows.net/public/docs/kitsune_banned.png)
